@@ -1,0 +1,137 @@
+<% include ../partial/header %>
+<br>
+
+<div class="container-fluid">
+    <div>
+        <font face="Poppin" size="7">Projects</font>
+    </div>
+    <div class="shadow-sm p-3 mb-5 bg-white rounded"
+    <hr>
+    <div>
+        <font face="Poppin" size="6">Filters</font>
+    </div>
+​
+    <div class="container">
+        <form action="/" method="get">
+            <div class="form-row">
+                <div class="form-group col-md-2 form-inline ">
+                    <div class="form-check">
+                        <input class="form-check-input " type="checkbox" id="" name="checkid">
+                        <label class="form-check-label" for="gridCheck">
+                            ID
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-md-10">
+                    <input type="text" class="form-control" id="id" placeholder="id" name="id">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2 form-inline ">
+                    <div class="form-check">
+                        <input class="form-check-input " type="checkbox" id="" name="checkid">
+                        <label class="form-check-label" for="gridCheck">
+                            Name
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-md-10">
+                    <input type="text" class="form-control" id="id" placeholder="name" name="id">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2 form-inline ">
+                    <div class="form-check">
+                        <input class="form-check-input " type="checkbox" id="" name="checkid">
+                        <label class="form-check-label" for="gridCheck">
+                            Member
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-md-10">
+                    <select name="" id="" class="form-control form-control-sm">
+                        <option disabled selected>choose the member</option>
+                        <option value="">Rama Anak Emas</option>
+                        <option value="">Owen Anak Tiri</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="submit" class="btn btn-warning">Reset</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <font face="Poppin" size="6">Options</font>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2">Checkbox</div>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                    ID
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                    Name
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                    Member
+                </label>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container" >
+        <button class="btn btn-primary">Apply</button>
+    </div>
+    </div>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="">ID</th>
+                <th class="" style="width: 50%;">Name</th>
+                <th class="">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><a href="/projects/overview">1</a></th>
+                <td>Kowi</td>
+                <td>
+                    <a href="/projects/edit" class="btn btn-success">Edit</a>
+                    <a href="" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="/projects/overview">2</a></th>
+                <td>Simba</td>
+                <td>
+                    <a href="/projects/edit" class="btn btn-success">Edit</a>
+                    <a href="" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="/projects/overview">3</a></th>
+                <td>Bruno</td>
+                <td>
+                    <a href="/projects/edit" class="btn btn-success">Edit</a>
+                    <a href="" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/projects/add" class="btn btn-primary">Add</a>
+</div>
+</div>
+
+
+
+
