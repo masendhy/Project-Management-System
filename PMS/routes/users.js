@@ -4,7 +4,7 @@ var helpers = require('../helpers/util');
 const bcrypt = require('bcrypt');
 const saltRounds = 8;
 
-// === Origin Get Home Page === \\
+
 module.exports = (pool) => {
 
   router.get('/', function (req, res, next) {
@@ -20,13 +20,7 @@ module.exports = (pool) => {
     })
   });
 
-  
-
-
-
-
-
-  //add
+  //ADD
 
   router.get('/add', (req, res, next) => {
     res.render('users/add');
@@ -46,4 +40,5 @@ module.exports = (pool) => {
   return router;
 }
 
-// =========================================== \\
+// EDIT
+
