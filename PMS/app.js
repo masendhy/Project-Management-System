@@ -4,14 +4,23 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-const Pool = require('pg').Pool
+//model setup
+const {
+  Pool
+} = require('pg');
+
+// // PG ADMIN
 const pool = new Pool({
   user:'postgres',
   host:'localhost',
   database:'pms',
   password:'abikbaik',
   port:5432,
-})
+});
+console.log("Successful connection to the database");
+
+
+
 
 
 var indexRouter = require('./routes/index')(pool);
