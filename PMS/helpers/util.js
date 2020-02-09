@@ -1,18 +1,11 @@
-module.exports = {
-    isLoggedIn: (req, res, next) => {
+const helpers = {
+  isLoggedIn: (req, res, next) => {
       if (req.session.user) {
-        next();
+          next();
       } else {
-        req.session.latestUrl = req.originalUrl;
-        res.redirect("/");
+          res.redirect("/");
       }
-    },
-  
-    isLoggedOut: (req, res, next) => {
-      if (req.session.user) {
-        res.redirect("/projects");
-      } else {
-        next();
-      }
-    }
-  };
+  }
+}
+
+module.exports = helpers;
