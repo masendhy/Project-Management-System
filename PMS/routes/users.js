@@ -131,7 +131,7 @@ module.exports = (pool) => {
       if (err) {
         throw err
       }
-      res.redirect('/users');s
+      res.redirect('/users');
     });
   });
 
