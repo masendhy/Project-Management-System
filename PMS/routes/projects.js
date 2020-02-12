@@ -172,5 +172,18 @@ module.exports = (pool) => {
     }
 
   })
+
+  router.get('/delete/:id', helpers.isLoggedIn, (req, res, next) => {
+    let deleteProject = 'DELETE FROM members WHERE projectid = $1';
+    const id = [req.params.id];
+    pool.query(deleteProject, id, (err) => {
+        if (err) throw err;
+        deleteProject = 'DELETE FROM projects WHERE projectid = $1';
+        pool.query(deleteProject, id, (err) => {
+            if (err) throw err;
+            res.redirect('/projects');
+        })
+    });
+})
   return router;
 };
